@@ -25,4 +25,3 @@ dtf=dtf.drop(dtf[dtf["KAPLAMA_CINSI"]== "1"].index)
 
 #Verisetinde yer alan kaplama cinsini kullanım sıklık grafiği ile ekrana getirdik
 plt.hist(dtf["KAPLAMA_CINSI"],title="Yapılan Yol Kaplama Cinsleri")
-
