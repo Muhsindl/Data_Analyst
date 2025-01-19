@@ -2,9 +2,14 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+from ydata_profiling import ProfileReport
 
 # Verisetinin okunması
-df=pd.read_csv("panic_attack_dataset.csv")
+df=pd.read_csv("C:/Users/Muhsin/Desktop/panic_attack_dataset.csv")
+
+# Verisetinin profilinin çıkarılması
+profile = ProfileReport(df, title="Profiling Report")
+profile.to_file("output.html")
 
 #---------------------------- Veri Analizi ----------------------------
 
@@ -84,6 +89,3 @@ plt.show()
 plt.waitforbuttonpress()
 plt.clf()
 plt.close()
-
-
-
