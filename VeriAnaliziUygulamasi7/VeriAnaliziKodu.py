@@ -8,8 +8,12 @@ from ydata_profiling import ProfileReport
 df=pd.read_csv("C:/Users/Muhsin/Desktop/panic_attack_dataset.csv")
 
 # Verisetinin profilinin çıkarılması
+"""
+# output.html dosyası oluşturuldu ve veri seti hakkında detaylı bilgileri içeriyor
+
 profile = ProfileReport(df, title="Profiling Report")
 profile.to_file("output.html")
+"""
 
 #---------------------------- Veri Analizi ----------------------------
 
