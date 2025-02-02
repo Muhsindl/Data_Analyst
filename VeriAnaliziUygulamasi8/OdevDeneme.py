@@ -24,12 +24,9 @@ print("Sütunda ki çeşitli değerler: ")
 print(df.ocean_proximity.unique())
 print("-"*50)
 # 'NEAR BAY' '<1H OCEAN' 'INLAND' 'NEAR OCEAN' 'ISLAND' olmak üzere 4 çeşit str değer içeriyor
+"""
 
-
-
-
-
-
+"""
 
 # Null Değer kontrolü
 print("NaN değer var mı?")
