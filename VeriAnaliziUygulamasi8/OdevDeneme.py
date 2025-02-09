@@ -35,3 +35,22 @@ df = df.na.fill({'total_bedrooms': mean_total_bedrooms})
 # Kullanılacak özellik sütunlarını belirliyoruz
 features = ['longitude', 'latitude', 'housing_median_age', 'total_rooms', 
             'total_bedrooms', 'population', 'households', 'median_income']
+# Belirlenen sütunları tek bir 'features' sütununa dönüştür
+assembler = VectorAssembler(inputCols=features, outputCol="features")
+df = assembler.transform(df)  # Yeni bir "features" sütunu oluşturulur
+
+# **Veri Kümesinin Eğitim ve Test Olarak Bölünmesi**
+# Veriyi %80 eğitim, %20 test olacak şekilde ikiye ayırıyoruz
+train_data, test_data = df.randomSplit([0.8, 0.2], seed=42)
+
+# **Lineer Regresyon Modelinin Eğitilmesi**
+lr = LinearRegression(featuresCol="features", labelCol="median_house_value")
+model = lr.fit(train_data)  # Modeli eğitim verisi üzerinde eğitiyoruz
+
+# **Modelin Test Verisi Üzerinde Değerlendirilmesi**
+# Test verisi üzerinde tahmin yapıyoruz
+predictions = model.transform(test_data)
+
+# Modelin performansını değerlendirmek için Kök Ortalama Kare Hatası (RMSE) hesaplıyoruz
+evaluator = RegressionEvaluator(labelCol="median_house_value", predictionCol="prediction", metricName="rmse")
+rmse = evaluator.evaluate(predictions)
