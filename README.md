@@ -1,11 +1,22 @@
-# Muhsin DOLU Veri Analizi
+# 📊 Muhsin DOLU - Veri Analizi
 
-Merhaba,
+Merhaba,  
+Ben **Muhsin DOLU**, bir yazılım mühendisiyim. Bu depo, **Python programlama dili** kullanılarak yapılmış çeşitli **veri analizlerini** içermektedir.  
+Analizler, dosyalar halinde düzenlenmiş olup, her biri farklı veri problemlerini çözmek amacıyla tasarlanmıştır.
 
-Ben Muhsin DOLU, bir yazılım mühendisiyim. Bu repository, Python dili kullanılarak yapılmış çeşitli veri analizleri içermektedir. Analizler, dosyalar halinde düzenlenmiştir ve her biri farklı problemleri çözmek için tasarlanmıştır.
-Bu dosyaları indirip bilgisayarınızda kullanabilirsiniz. Her analizin nasıl çalıştığını anlamak için ilgili kaynak kodlarına göz atabilirsiniz.
-Eğer herhangi bir sorunuz veya yardım talebiniz olursa, bana [muhsindolu06@gmail.com](mailto:muhsindolu06@gmail.com) üzerinden ulaşabilirsiniz.
+## 🚀 Nasıl Kullanılır?
 
-İyi çalışmalar!
+Bu repodaki dosyaları indirerek kendi bilgisayarınızda Python ortamında çalıştırabilirsiniz.  
+Her analiz, ilgili veri setleri ve kaynak kodları ile birlikte gelmektedir.  
+Analizlerin nasıl çalıştığını anlamak için kaynak kodlarına göz atabilirsiniz.
 
-Muhsin DOLU
+## ❓ Destek ve İletişim
+
+Herhangi bir sorunuz olursa ya da destek almak isterseniz benimle iletişime geçebilirsiniz:
+
+📧 [muhsindolu06@gmail.com](mailto:muhsindolu06@gmail.com)
+
+---
+
+İyi çalışmalar!  
+**Muhsin DOLU**
